@@ -1,7 +1,9 @@
 var canvas;
 var canvasContext;
 var ballX = 50;
-var ballSpeedX = 7;
+var bally = 50;
+var ballSpeedX = 10;
+var ballSpeedY = 4;
 
 window.onload = function (){
         canvas = document.getElementById('gameCanvas');
