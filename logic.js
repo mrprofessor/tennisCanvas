@@ -16,8 +16,12 @@ window.onload = function (){
 }
 function moveEverything() {
     ballX = ballX + ballSpeedX;
-    if(ballX > canvas.width+10 || ballX < 10){
+    ballx = bally + ballSpeedY;
+    if(ballX > canvas.width || ballX < 0){
         ballSpeedX = -ballSpeedX;
+    }
+    if(bally > canvas.height || bally < 0){
+        ballSpeedY = -ballSpeedY;
     }
 }
 function drawEverything() {
@@ -25,7 +29,7 @@ function drawEverything() {
     colorRect(0,210,10,100,'pink');
     colorRect(canvas.width-10,210,10,100,'pink');
 
-    colorCircle(ballX,100,10, 'red');
+    colorCircle(ballX,bally,10, 'red');
 }
 function colorRect(leftX,rightY,width,height,drawColor) {
     canvasContext.fillStyle = drawColor;
