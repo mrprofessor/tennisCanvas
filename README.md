@@ -1,5 +1,5 @@
 # tennisCanvas
 
 A simple arcade implementation of tennis on canvas.
-You gonna love it
+You might like it
 .
